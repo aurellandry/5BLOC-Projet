@@ -1,0 +1,22 @@
+{
+  "name": "blockprop",
+  "version": "1.0.0",
+  "description": "Blockprop.. A blockchain based real estate buying and selling",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "parthiban",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "ganache-cli": "^6.12.2",
+    "solc": "^0.8.1",
+    "truffle": "^5.2.0",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.3.4"
+  }
+}

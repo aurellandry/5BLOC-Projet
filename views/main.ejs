@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/head.ejs %>
+</head>
+<body>
+    <nav class="w3-card-4">
+        <div class="brand"><a href="/"><span class="fa fa-bar-chart"></span> BloCoin</a></div>
+        <!-- <div class="items">
+            <a href="/">Home</a>
+            <a href="sell">Sell Property</a>
+            <a href="about">About</a>
+            <a href="logout">Logout</a>
+        </div> -->
+    </nav> <br/><br/><br/><br/>
+    
+    <div class="container">
+        <div style="text-align:center;margin-top:70px;"><h2><b style="border-bottom:3px solid #E7AB0A">Mes tokens</b></h2></div>
+        
+        <div class="property-container">
+            <% include partials/components/mytokens.ejs %>
+        </div>       
+    </div>
+
+    <div class="container" style="background-color:#ddd;">
+        <div style="text-align:center;margin-top:70px;"><h2><b style="border-bottom:3px solid #E7AB0A">Tokens à vendre</b></h2></div>
+        <div class="property-container">
+            <% include partials/components/forsale.ejs %>
+        </div>
+    </div>
+
+    </div>
+    <footer style="text-align:center;margin-top:70px;">
+        &copy; BloCoin - 2021
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.4/web3.min.js" integrity="sha512-TTGImODeszogiro9DUvleC9NJVnxO6M0+69nbM3YE9SYcVe4wZp2XYpELtcikuFZO9vjXNPyeoHAhS5DHzX1ZQ==" crossorigin="anonymous"></script>
+ 
+    <% include partials/jsincludes.ejs %>
+    <script src="/js/arrive.min.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/init.js"></script>
+    <script src="/js/forsale.js"></script>
+    <script src="/js/mytokens.js"></script>
+</body>
+</html>

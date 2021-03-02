@@ -1,0 +1,43 @@
+<div class="tokens-container" style="position:relative;padding:30px;">
+    <button style="position:absolute;left:30px;top:0;cursor:pointer;background-color: #E7AB0A" id="updateMyTokensButtonID"><span class="fa fa-refresh"></span> Rafraîchir</button> 
+    <br/>
+    <button type="button" style="cursor:pointer; background-color: #E7AB0A" data-toggle="modal" data-target="#addTokenModal"><span class="fa fa-plus"></span> Ajouter un Token</button>
+    <br/>
+    <button type="button" style="cursor:pointer; background-color: #E7AB0A;" data-toggle="modal" data-target="#withdrawComm"><span class="fa fa-plus"></span> Récupérer les commissions</button>
+
+    <br/><br/>
+    
+    <div class="w3-row myTokensPanel">
+        
+    </div>
+</div>
+
+<div class="modal" id="addTokenModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ajouter un token</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="addToken-location" class="col-form-label">Lieu :</label>
+                        <input id="addToken-location" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="addToken-cost" class="col-form-label">Prix :</label>
+                        <input id="addToken-cost" type="text" class="form-control">
+                    </div>
+                </form>
+            </div>
+            
+            <div class="modal-footer">
+                <button id="addTokenButtonID" type="button" style="cursor:pointer; background-color: #E7AB0A"><span class="fa fa-save"></span> Enregister</button>
+            </div>
+        </div>
+    </div>
+  </div>
